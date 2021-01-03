@@ -1,0 +1,19 @@
+.slides-navigation .next,
+.slides-navigation .prev {
+    width: 47px;
+    height: 47px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: rgba(255,255,255,0.4);
+    border-radius: 20px;
+}
+
+.slides-navigation a.prev{ 
+    left: 20px; 
+    background-image: url('https://img.icons8.com/ios/50/000000/circled-left-2.png');
+}
+
+.slides-navigation a.next{
+    right: 20px; 
+    background-image: url('https://img.icons8.com/ios/50/000000/circled-right-2.png');
+}
