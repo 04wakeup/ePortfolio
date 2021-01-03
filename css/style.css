@@ -16,6 +16,7 @@ body{
 }
 .slides-navigation{
     z-index: 6;
+    top: 50%;
 }
 .slides-navigation .next,
 .slides-navigation .prev {
@@ -48,7 +49,7 @@ body{
 }
 .titleMessage .heading p{
     color: #fff;
-    text-shadow: 0px 2px 5px rgba(0,0,0,0.4);
+    text-shadow: 1px 2px 2px rgba(0,0,0,0.5);
     font-weight: 100;
     letter-spacing: 7px; 
 }
@@ -70,4 +71,38 @@ body{
 .skillsSection{
     background-color: #e74c3c;
     color: #fff;
+}
+
+/* Part 3 - Skill */
+.skill{
+    text-align: center; 
+    /* margin-left: 25px; */
+}
+.skill:first-child{
+    margin-left: 0px;
+}
+
+.chart{
+    position: relative;
+    width: 152px;
+    height: 152px;
+    display: inline-block; 
+    text-align: center;
+}
+
+.chart canvas{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.chart .percent{
+    color: rgba(0,0,0,0.6);
+    line-height: 152px;
+    display: inline-block;
+    font-size: 35px;
+}
+
+.chart .percent:after{
+    content: '%'
 }
