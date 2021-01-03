@@ -52,3 +52,9 @@
     font-size: 25px;
 }
 /* Part 2 */
+.section{
+    padding: 100px 0px;
+}
+.aboutImage{
+    max-width: 100%;
+}
