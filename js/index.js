@@ -52,4 +52,11 @@ $(document).ready(function () {
       });
     }
   });
+
+  // Count up
+  $(".counter").each(function () {
+    const element = $(this); // choose each element
+    const endVal = parseInt(element.text()); // catch the text as number
+    element.countup(endVal);
+  });
 });
