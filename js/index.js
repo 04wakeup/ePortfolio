@@ -35,6 +35,9 @@ $(document).ready(function () {
 
   // get the offset from top
   const skillsTopOffset = $(".skillsSection").offset().top;
+  const statsTopOffset = $(".statsSection").offset().top;
+  let countUpFinished = false;
+
   $(window).scroll(function () {
     // just before the position of charts
     if (window.pageYOffset > skillsTopOffset - $(window).height() + 200) {
@@ -51,12 +54,15 @@ $(document).ready(function () {
         },
       });
     }
-  });
 
-  // Count up
-  $(".counter").each(function () {
-    const element = $(this); // choose each element
-    const endVal = parseInt(element.text()); // catch the text as number
-    element.countup(endVal);
+    if (!countUpFinished && window.pageYOffset > statsTopOffset - $(window).height() + 200) {
+      // Count up
+      $(".counter").each(function () {
+        const element = $(this); // choose each element
+        const endVal = parseInt(element.text()); // catch the text as number
+        element.countup(endVal);
+      });
+      countUpFinished = true; // to avoid that it counts already then change to zero. so execute it once
+    }
   });
 });
