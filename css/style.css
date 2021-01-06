@@ -68,7 +68,8 @@ body{
     max-width: 100%;
 }
 /* Part 3 - Skills */
-.skillsSection{
+.skillsSection,
+.contactSection{
     background-color: #e74c3c;
     color: #fff;
 }
@@ -159,4 +160,95 @@ body{
     font-size: 45px;
     margin-left: -20%;
     color: #444;
+}
+/* Part 5: Contact */
+.contactButton{
+    color: #fff;
+    padding: 15px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    /* font-size: 25px; */
+    font-weight: 600;
+    text-decoration: none;
+}
+.contactButton:hover{
+    color: #e74c3c;
+    background-color: white;
+
+}
+
+/* Part 6: Portfolio */
+.filter a{
+    color: #bdc3c7;
+    border: 1px solid #bdc3c7;
+    padding: 10px 18px;
+    display: block;
+}
+
+.filter li{
+    display: inline-block;
+    padding: 5px;
+}
+
+.filter .current{
+    background-color: #e74c3c;
+    border-color: #e74c3c;
+    color: #fff;
+}
+.filter {
+    text-align: center;
+    width: 100%;
+}
+
+.section .heading{
+    text-align: center;
+    padding-bottom: 40px;
+    width: 100%;
+}
+
+.items li{
+    display: inline-block;
+    padding: 5px;
+}
+
+.itemsContainer{
+    width: 100%;
+}
+
+.items li img{
+    width: 100%;
+}
+
+.items .item{
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.items .icons{
+    position: absolute;
+    width: 90px;
+    height: 40px;
+    left: 50%;
+    top: 50%;
+    margin: -10px auto 0 -47px;
+    z-index: 3;
+    text-align: center;
+}
+
+.items .icons i{
+    color: #fff;
+    font-size: 20px;
+    margin-top: 9px;   
+}
+
+.items a {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255,0,0,0.4);
+    position: relative;
+    display: inline-block;
+    border-radius: 20px;
 }

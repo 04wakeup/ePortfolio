@@ -65,4 +65,17 @@ $(document).ready(function () {
       countUpFinished = true; // to avoid that it counts already then change to zero. so execute it once
     }
   });
+
+  // Image handling
+  $("[data-fancybox]").fancybox();
+
+  // Filter handling
+  $(".items").isotope({
+    filter: "*",
+    animationOptions: {
+      duration: 1500,
+      easing: "linear",
+      queue: false,
+    },
+  });
 });
