@@ -181,10 +181,12 @@ body{
 
 /* Part 6: Portfolio */
 .filter a{
-    color: #bdc3c7;
-    border: 1px solid #bdc3c7;
+    color: #5d6063;
+    border: 1px solid #5d6063;
     padding: 10px 18px;
     display: block;
+    text-decoration: none;
+    font-weight: 500;
 }
 
 .filter li{
@@ -208,6 +210,9 @@ body{
     width: 100%;
 }
 
+.items{
+    padding: 0px;
+}
 .items li{
     display: inline-block;
     padding: 5px;
@@ -219,6 +224,11 @@ body{
 
 .items li img{
     width: 100%;
+    -webkit-transition: all 0.2s linear, 1s; 
+    -moz-transition: all 0.2s linear, 1s;
+    -o-transition: all 0.2s linear, 1s;
+    -ms-transition: all 0.2s linear, 1s;
+    -transition: all 0.2s linear, 1s; 
 }
 
 .items .item{
@@ -250,7 +260,7 @@ body{
     background-color: rgba(255,0,0,0.4);
     position: relative;
     display: inline-block;
-    border-radius: 20px;
+    border-radius: 20px; 
     -webkit-transition: all 0.2s linear, 0.2s; 
     -moz-transition: all 0.2s linear, 0.2s;
     -o-transition: all 0.2s linear, 0.2s;
@@ -293,3 +303,11 @@ body{
 .items .item:hover .projectLink{
     right: 0px;
 }   
+
+.items .item:hover img{
+    -webkit-transform: scale(1.05, 1.05);
+    -moz-transform: scale(1.05, 1.05);
+    -o-transform: scale(1.05, 1.05);
+    -ms-transform: scale(1.05, 1.05);
+    -transform: scale(1.05, 1.05);
+}
