@@ -99,4 +99,22 @@ $(document).ready(function () {
   const currentYear = new Date().getFullYear();
   const copyRight = $("#currentYear")[0];
   copyRight.innerHTML = " " + currentYear;
+
+  //  Part 1.5 Navigation stick
+  const nav = $("#navigation");
+  const navTop = nav.offset().top;
+
+  $(window).on("scroll", stickyNavigation);
+
+  function stickyNavigation() {
+    const body = $("body");
+    if ($(window).scrollTop() >= navTop) {
+      body.css("padding-top", nav.outerHeight() + "px"); // remove jumping top area
+      // y axis increase when it goes down
+      body.addClass("fixedNav");
+    } else {
+      body.css("padding-top", 0);
+      body.removeClass("fixedNav");
+    }
+  }
 });
