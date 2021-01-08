@@ -1,3 +1,20 @@
+// on page loading
+$(window).on("load", function () {
+  $(".loader .inner").fadeOut(400, function () {
+    $(".loader").fadeOut(650); // more naturally disappear
+  });
+
+  // Filter handling, by putting here it prevents images are duplicated
+  $(".items").isotope({
+    filter: "*",
+    animationOptions: {
+      duration: 1500,
+      easing: "linear",
+      queue: false,
+    },
+  });
+});
+
 $(document).ready(function () {
   $("#slides").superslides({
     animation: "fade",
@@ -68,16 +85,6 @@ $(document).ready(function () {
 
   // Image handling
   $("[data-fancybox]").fancybox();
-
-  // Filter handling
-  $(".items").isotope({
-    filter: "*",
-    animationOptions: {
-      duration: 1500,
-      easing: "linear",
-      queue: false,
-    },
-  });
 
   $("#filters a").click(function () {
     $("#filters .current").removeClass("current");
