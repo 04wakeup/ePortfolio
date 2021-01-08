@@ -94,4 +94,9 @@ $(document).ready(function () {
     });
     return false; // don't do anything
   });
+
+  // Part 7. Copyright
+  const currentYear = new Date().getFullYear();
+  const copyRight = $("#currentYear")[0];
+  copyRight.innerHTML = " " + currentYear;
 });
