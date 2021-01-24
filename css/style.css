@@ -14,6 +14,10 @@ body{
     z-index: 3;
     background-color: rgba(0,0,0,0.4);
 }
+.slides-container .img{
+    width: 50%;
+    height: auto;
+}
 .slides-navigation{
     z-index: 6;
     top: 50%;
@@ -180,6 +184,9 @@ body{
 }
 
 /* Part 6: Portfolio */
+.fancybox-caption__body{
+    font-size: 20px;
+}
 .filter a{
     color: #5d6063;
     border: 1px solid #5d6063;
@@ -239,18 +246,18 @@ body{
 
 .items .icons{
     position: absolute;
-    width: 90px;
+    width: 150px;
     height: 40px;
     left: 50%;
     top: 50%;
-    margin: -10px auto 0 -47px;
+    margin: -10px auto 0 -70px;
     z-index: 3;
     text-align: center;
 }
 
 .items .icons i{
     color: #fff;
-    font-size: 20px;
+    font-size: 25px;
     margin-top: 9px;   
 }
 
@@ -292,18 +299,23 @@ body{
     left: -200px;
 }
 .items .projectLink{
+    float: top;
+    top: -200px;
+}
+.items .githublink{
     float: right;
     right: -200px;
 }
-
 .items .item:hover .openButton{
     left: 0px;    
 }
 
 .items .item:hover .projectLink{
-    right: 0px;
+    top: 0px;
 }   
-
+.items .item:hover .githublink{
+    right: 0px;
+}    
 .items .item:hover img{
     -webkit-transform: scale(1.05, 1.05);
     -moz-transform: scale(1.05, 1.05);
