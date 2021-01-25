@@ -261,13 +261,14 @@ body{
 }
 .items .item .coreTech{
     position: absolute;
-    bottom: 20px;
+    bottom: 0px;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;  
     gap: 3px;
-    left: 5%;
+    /* left: 5%; */
     background-color: white;
+    padding: 0px 10px;
 }
 
 .items .item .coreTech h6{ 
