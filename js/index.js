@@ -83,8 +83,8 @@ $(document).ready(function () {
     }
   });
 
-  // Image handling
-  $("[data-fancybox]").fancybox();
+  // Image handling : not necessary
+  // $("[data-fancybox]").fancybox();
 
   $("#filters a").click(function () {
     $("#filters .current").removeClass("current");
