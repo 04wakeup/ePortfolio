@@ -76,12 +76,15 @@ body{
 .contactSection{
     background-color: #e74c3c;
     color: #fff;
-}
-
+} 
 /* Part 3 - Skill */
 .skill{
+    margin-top : 25px;
     text-align: center; 
     /* margin-left: 25px; */
+}
+.skill h4{
+    margin-top: 10px;
 }
 .skill:first-child{
     margin-left: 0px;
